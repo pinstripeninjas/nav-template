@@ -72,6 +72,10 @@ nav #nav-links ul {
   padding: 0;
 }
 
+nav #nav-links ul i {
+  margin-left: 5px;
+}
+
 nav #nav-links ul li {
   list-style-type: none;
   padding: 0 15px;
@@ -82,5 +86,26 @@ nav #nav-links ul li {
 nav #nav-links ul li:hover {
   background-color: #072f65;
   cursor: pointer;
+}
+
+nav #nav-links ul #links:hover .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav #nav-links ul .dropdown {
+  display: none;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 205px;
+  background-color: #0a4595;
+  color: #fff;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+  z-index: 100;
 }
 /*# sourceMappingURL=nav-template.css.map */
